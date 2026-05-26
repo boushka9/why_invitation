@@ -1,11 +1,102 @@
-h1 {
-    font-size: 32px;
+:root {
+  --gold: #ba8e3b; /* global scope */
+  --darkBrown: #624724;
+  --cadmium: #724d1b;
+  --brightGold: #f1bb59;
+  --cream: #f6f1d5;
+  --lGray: #bcb5b0;
+  --dGray: #737373;
+
 }
 
-@media (min-width: 992px){
-    h1{
-        font-size: 72px;
+@font-face {
+  font-family: 'Caslon3';
+  src: url('https://static.wfonts.com/data/2015/06/01/caslon-3/Caslon3.ttf') format('ttf');
+  font-display: swap;
+}
+
+#preview-render {
+  font-family: 'Caslon3', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 32px;
+  color: #373c44;
+}
+
+body{
+    background-image: url("/assets/images/bg.png");
+    font-family: 'Caslon3', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    h1 {
+        color: var(--gold);
+        font-size: 32px;
+        font-family: 'Caslon3';
     }
-    
-    
+    h3 {
+        color: var(--darkBrown)
+    }
+
+    h4 {
+        font-family: "Segoe UI";
+        color:  var(--cadmium);
+    }
+
+    p {
+        color: var(--dGray);
+    }
+
+     p a:link, p a:visited {
+        text-decoration: none !important;
+        color: var(--dGray) !important;
+    }
+
+    p a:hover, p a:click{
+        text-decoration: underline;
+        color: var(--brightGold);
+    }
+
+    .lang-sel {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lang-sel .button {
+        background-color: var(--lGray);
+        border-radius: 5px;
+        padding: 1%;
+    }
+
+    .curr {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .curr p {
+        background-color: var(--lGray);
+        border-radius: 5px;
+        padding: 1%;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    footer{
+        color: var(--lGray);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 320px) 
+and (max-width: 479px) {
+
+
 }
