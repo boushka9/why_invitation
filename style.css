@@ -9,34 +9,68 @@
 
 }
 
-@font-face {
-  font-family: 'Caslon3';
-  src: url('https://static.wfonts.com/data/2015/06/01/caslon-3/Caslon3.ttf') format('ttf');
-  font-display: swap;
+
+
+.quicksand-calm {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--darkBrown);
 }
 
-#preview-render {
-  font-family: 'Caslon3', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 32px;
-  color: #373c44;
+.libre-regular {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+
+
+.libre-light {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 300;
+  font-style:normal;
+}
+
 
 body{
     background-image: url("/assets/images/bg.png");
-    font-family: 'Caslon3', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 3em;
+    text-align: center;
+
+    .why {
+        font-size: 47px;
+        font-style: italic;
+        margin-bottom: 0em;
+    }
     h1 {
         color: var(--gold);
-        font-size: 32px;
-        font-family: 'Caslon3';
+        font-size: 40px;
+        margin-top: .2em;
+    }
+    h2{
+        font-size: 26px;
+        text-decoration: underline;
+
     }
     h3 {
-        color: var(--darkBrown)
+        color: var(--darkBrown);
+        font-size: 16px;
     }
 
     h4 {
-        font-family: "Segoe UI";
-        color:  var(--cadmium);
+        font-size: 20px;
+        margin-top: 0em;
+        margin-bottom: 5em;
     }
 
     p {
@@ -55,16 +89,23 @@ body{
 
     .lang-sel {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
     .lang-sel .button {
+        font-size: 18px;
         background-color: var(--lGray);
         border-radius: 5px;
-        padding: 1%;
+        padding: 4px 6px;
+        margin-top: 0em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
+
 
     .curr {
         display: flex;
@@ -72,6 +113,36 @@ body{
         flex-wrap: nowrap;
         align-items: center;
     }
+
+    .learn-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1.5em;
+
+    }
+
+    .learn-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 4em;
+        margin-right: 4em;
+        h3, h2 {
+            margin: .1em;
+        }
+
+
+    }
+
 
     .curr p {
         background-color: var(--lGray);
@@ -86,6 +157,7 @@ body{
     footer{
         color: var(--lGray);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 2em;
     }
 
 
@@ -95,8 +167,12 @@ body{
 
 
 
-@media screen and (min-width: 320px) 
-and (max-width: 479px) {
-
+@media screen and (max-width: 479px) {
+   body .learn-item {
+        margin-top: 0em;
+        margin-bottom: 0em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 
 }
