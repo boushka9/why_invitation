@@ -26,14 +26,6 @@
 }
 
 
-
-.libre-light {
-  font-family: "Libre Caslon Text", serif;
-  font-weight: 300;
-  font-style:normal;
-}
-
-
 body{
     background-image: url("/assets/images/bg.png");
     background-repeat: no-repeat;
@@ -97,6 +89,8 @@ body{
 
     .lang-sel .button {
         font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
         background-color: var(--lGray);
         border-radius: 5px;
         padding: 4px 6px;
@@ -156,7 +150,6 @@ body{
 
     footer{
         color: var(--lGray);
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin-top: 2em;
     }
 
