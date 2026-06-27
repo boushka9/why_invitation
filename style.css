@@ -71,10 +71,10 @@ body{
 
      p a:link, p a:visited {
         text-decoration: none !important;
-        color: var(--dGray) !important;
+        color: var(--dGray);
     }
 
-    p a:hover, p a:click{
+    .lang-sel p.button a:hover {
         text-decoration: underline;
         color: var(--brightGold);
     }
@@ -133,8 +133,13 @@ body{
         h3, h2 {
             margin: .1em;
         }
+    }
 
-
+    .learn-item a {
+        color: var(--cadmium);
+    }
+    .learn-item a:hover {
+        color: var(--brightGold);
     }
 
 
