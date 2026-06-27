@@ -83,7 +83,7 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -93,7 +93,7 @@ body{
         font-weight: 500;
         background-color: var(--lGray);
         border-radius: 5px;
-        padding: 4px 6px;
+        padding: 5px 7px;
         margin-top: 0em;
         margin-bottom: 1em;
         margin-left: 1em;
