@@ -47,9 +47,16 @@ body{
         font-style: italic;
         margin-bottom: 0em;
     }
+    .soon h1 {
+        font-size: 2.6em;
+    }
+    .soon header {
+        font-size: 3.5em;
+        margin-bottom: .5em;
+    }
     h1 {
         color: var(--gold);
-        font-size: 40px;
+        font-size: 2.5em;
         margin-top: .2em;
     }
     h2{
